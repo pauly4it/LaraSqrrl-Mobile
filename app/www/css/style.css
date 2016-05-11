@@ -4,3 +4,11 @@ input[type="tel"] {
   border-color: #ddd !important;
   border-style: solid !important;
 }
+
+.feed {
+  width: 100%;
+}
+
+.feed img {
+  max-width: 100%
+}

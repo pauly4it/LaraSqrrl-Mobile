@@ -1,0 +1,20 @@
+<ion-view title="Feed">
+  <ion-content>
+    Your Photos
+    <ion-list>
+      <ion-item ng-repeat="photo in photos">
+        <div class="feed">
+          <img ng-src="{{photo.url}}" />
+          <br>
+          <span>Responses:</span>
+          <ion-list>
+            <ion-item ng-repeat="response in photo.responses">
+              <div>User: {{response.user}}</div>
+              <div>Squirrel?: {{response.isSquirrel}}</div>
+            </ion-item>
+          </ion-list>
+        </div>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
